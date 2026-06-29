@@ -1,0 +1,317 @@
+/* CONFIGURAÇÕES GERAIS E RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 14px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+/* NAVBAR FIXA NO TOPO */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-title {
+  font-family: 'Instrument Serif', serif;
+  font-size: 28px;
+  color: #000000;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #000000;
+  font-family: 'Instrument Serif', serif;
+  font-size: 22px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.nav-links a:hover, .footer-link:hover {
+  opacity: 0.6;
+}
+
+/* CONTAINER PRINCIPAL */
+.v1_2 {
+  width: 100%;
+  margin-top: 80px; 
+}
+
+/* SEÇÃO HERO / INICIO */
+.v1_3 {
+  width: 100%;
+  min-height: calc(100vh - 80px);
+  /* Camada preta de 70% aplicada via linear-gradient sobre a imagem v1_3.png */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/v1_3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.v1_4 {
+  color: #ffffff;
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(48px, 8vw, 112px);
+  margin-bottom: 24px;
+}
+
+.v2_17 {
+  max-width: 750px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'JejuMyeongjo', serif;
+  font-size: clamp(16px, 2.5vw, 24px);
+  line-height: 1.6;
+}
+
+/* SEÇÃO SOBRE (BIOGRAFIA BEGE) */
+.v2_10 {
+  width: 100%;
+  background: #f2eed3;
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.v2_23 {
+  max-width: 900px;
+  margin-bottom: 48px;
+}
+
+.v2_21 {
+  color: #000000;
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(22px, 3.5vw, 32px);
+  line-height: 1.5;
+}
+
+.v2_28 {
+  display: inline-block;
+  border: 1px solid #000000;
+  padding: 12px 40px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.v2_28:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.v2_27 {
+  color: #000000;
+  font-family: 'Instrument Serif', serif;
+  font-size: 22px;
+}
+
+/* CONTAINER DAS SEÇÕES DE TRACKLIST */
+.tracklist-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+/* SEÇÃO UNMUSIQUE */
+.v4_2 {
+  width: 100%;
+  background: #f5f4f1;
+  padding: 100px 40px;
+}
+
+.v4_14, .v4_18 {
+  flex: 1;
+  min-width: 300px;
+}
+
+.v4_11, .v4_19 {
+  color: #000000;
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(36px, 5vw, 64px);
+  margin-bottom: 40px;
+}
+
+.v4_13, .v4_20 {
+  color: #000000;
+  font-family: 'Instrument Serif', serif;
+  font-size: 32px;
+  line-height: 1.6;
+}
+
+/* BLOCOS DE IMAGENS COLUNA */
+.v4_16, .v4_21 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.v4_8, .v4_15 {
+  width: 398px;
+  height: 459px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.v4_8 { background-image: url("../images/v4_8.png"); }
+.v4_15 { background-image: url("../images/v4_15.png"); }
+
+/* SEÇÃO SISTERHOOD */
+.v4_17 {
+  width: 100%;
+  background: #f2eed3;
+  padding: 100px 40px;
+}
+
+.layout-reverse {
+  flex-direction: row;
+}
+
+.v4_22, .v4_23 {
+  width: 357px;
+  height: 336px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.v4_22 { background-image: url("../images/v4_22.png"); }
+.v4_23 { background-image: url("../images/v4_23.png"); }
+
+
+/* RODAPÉ E REORGANIZAÇÃO DA LOGO DA NAVBAR */
+.v4_24 {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.v4_41 {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.v4_34 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* O elemento v4_30 agora serve para a logo da NAVBAR e do FOOTER */
+.v4_30 {
+  width: 45px;          /* Ajustado tamanho para caber perfeitamente como logo */
+  height: 45px;
+  border-radius: 50%;   /* Formato arredondado de foto de perfil */
+  background-image: url("../images/v4_30.png"); /* Puxa a imagem unmusique.png renomeada ou correspondente */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* No footer, se você quiser a logo ligeiramente maior como antes, mantemos o bloco proporcional */
+.v4_34 .v4_30 {
+  width: 60px;
+  height: 60px;
+}
+
+.v4_32 {
+  color: #000000;
+  font-family: 'Instrument Serif', serif;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.v4_40 {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  color: #000000;
+  font-family: 'Instrument Serif', serif;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* MEDIA QUERIES PARA CELULARES */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .nav-links {
+    gap: 15px;
+  }
+  .nav-links a {
+    font-size: 18px;
+  }
+  .nav-title {
+    font-size: 22px;
+  }
+  .tracklist-container {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 40px;
+  }
+  .v4_8, .v4_15, .v4_22, .v4_23 {
+    width: 100vw;
+  }
+  .v4_41 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .v4_40 {
+    justify-content: center;
+  }
+}
